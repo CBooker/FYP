@@ -1,0 +1,18 @@
+#cut and paste from StackExchange using pySerial
+
+import time
+import serial
+
+
+#Establish connection on the port
+
+ser = serial.Serial('/dev/ttyACM0', 9600)
+
+
+x = 1
+while x==1:
+	if ser.readline() == ("TILT: X AXIS"):
+	
+	print ("Oh shit")
+	time.sleep(1)
+
